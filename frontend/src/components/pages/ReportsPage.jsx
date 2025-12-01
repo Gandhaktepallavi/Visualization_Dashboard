@@ -1,4 +1,4 @@
-// src/components/pages/ReportsPage.jsx
+
 import React from "react";
 
 function ReportsPage() {

@@ -29,7 +29,7 @@ function Topbar() {
     setShowProfile((prev) => !prev);
   };
 
-  // static user details for now – later you can fetch from backend
+  // static user details 
   const user = {
     name: "Sai",
     role: "Performance Analyst",

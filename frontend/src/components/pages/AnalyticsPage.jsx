@@ -1,4 +1,4 @@
-// src/components/pages/AnalyticsPage.jsx
+
 import React from "react";
 
 function AnalyticsPage() {

@@ -1,4 +1,4 @@
-// src/components/pages/CustomersPage.jsx
+
 import React from "react";
 
 function CustomersPage() {

@@ -1,4 +1,3 @@
-// src/components/pages/ProductsPage.jsx
 import React from "react";
 
 function ProductsPage() {
