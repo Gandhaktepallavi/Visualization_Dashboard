@@ -1,0 +1,243 @@
+/* Filter Panel Styles */
+
+.filter-panel {
+  margin-bottom: 16px;
+}
+
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+  color: var(--text-main);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 13px;
+}
+
+.filter-toggle:hover {
+  background: #253055;
+  border-color: var(--accent);
+}
+
+.filter-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #111827;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.filter-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 8px;
+  max-height: 600px;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.filter-header h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.filter-clear-btn {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(244, 180, 26, 0.2);
+  color: var(--accent-soft);
+  font-size: 11px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.filter-clear-btn:hover {
+  background: var(--accent);
+  color: #111827;
+}
+
+.filter-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filter-section {
+  border: 1px solid rgba(55, 65, 81, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.filter-section-header {
+  width: 100%;
+  padding: 10px 12px;
+  background: rgba(55, 65, 81, 0.3);
+  border: none;
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.filter-section-header:hover {
+  background: rgba(55, 65, 81, 0.5);
+}
+
+.filter-section-toggle {
+  font-size: 10px;
+  opacity: 0.7;
+}
+
+.filter-section-content {
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.filter-options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--text-main);
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.filter-checkbox:hover {
+  background: rgba(244, 180, 26, 0.1);
+}
+
+.filter-checkbox input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: var(--accent);
+}
+
+.filter-checkbox span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.filter-range {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.range-input {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.range-input label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.range-input input[type="range"] {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--border-subtle);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.range-input input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: var(--accent);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.range-input input[type="range"]::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: var(--accent);
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.filter-info {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  background: rgba(244, 180, 26, 0.08);
+  font-size: 10px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Scrollbar Styling */
+.filter-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.filter-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.filter-content::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 3px;
+}
+
+.filter-content::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .filter-options-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .filter-content {
+    max-height: 400px;
+  }
+}
