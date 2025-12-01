@@ -13,7 +13,7 @@ const items = [
 function Sidebar() {
   return (
     <aside className="dash-sidebar">
-      <div className="sidebar-logo">ECOMVISION</div>
+      <div className="sidebar-logo">VISUAL_DASH</div>
       <nav className="sidebar-menu">
         <div className="sidebar-section-title">Main</div>
         {items.slice(0, 4).map((item) => (
